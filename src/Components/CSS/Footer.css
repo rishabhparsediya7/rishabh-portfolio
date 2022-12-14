@@ -1,0 +1,22 @@
+.section-social {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+}
+section .fab:hover {
+  color: var(--text-secondary);
+}
+.footers {
+  width: 100%;
+}
+.copyright{
+   display: flex;
+    justify-content: center;
+    align-content: center;
+    color: var(--text-secondary);
+    background-color: var(--text-secondary);
+    padding: 20px;
+    font-size: 23px;
+}
