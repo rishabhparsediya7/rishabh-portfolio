@@ -1,0 +1,107 @@
+.projects {
+  width: 100%;
+  padding: 20px;
+  
+}
+.project-head {
+  color: var(--text-secondary);
+}
+.project {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.projects .card {
+  margin: auto;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: var(--background);
+  margin-top: 50px;
+  transition: all 0.2s;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.projects .card:hover {
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+  transform: translate(-5px, -5px);
+}
+
+.projects .card:hover .icon svg {
+  animation: iconjln 1s;
+}
+
+.img-cover {
+  position: relative;
+}
+
+.projects .card img {
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  padding: 25px;
+  right: 0;
+  border-bottom-left-radius: 20px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.desc {
+  padding: 1.5em;
+  font-family: "Poppins", sans-serif;
+}
+.desc h1 {
+  display: inline;
+  color: var(--text-primary);
+  font-weight: bold;
+}
+.tdesc {
+  margin-bottom: 40px;
+  width: 100%;
+  height: 50px;
+  overflow: auto;
+}
+.desc p {
+  color: var(--text-secondary);
+}
+.desc a {
+  text-decoration: none;
+  background-color: dodgerblue;
+  padding: 15px 25px;
+  color: var(--text-secondary);
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+  transition: all 0.2s;
+}
+.desc a:hover {
+  background-color: SteelBlue;
+}
+.desc a:hover svg {
+  animation: iconjln 1s;
+}
+
+@keyframes iconjln {
+  0%,
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  70% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
