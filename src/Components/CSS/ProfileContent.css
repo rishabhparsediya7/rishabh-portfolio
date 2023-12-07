@@ -58,7 +58,7 @@ section .fab:hover {
 }
 .image img {
   width: 70%;
-  height: 700px;
+  height: calc(100vh - 50px);
   filter: brightness(0.5);
   border-radius: 10px;
   animation: profile 2s ease 0s 1 normal forwards;

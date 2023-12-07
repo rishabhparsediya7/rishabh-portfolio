@@ -22,12 +22,11 @@
   border-radius: 20px;
   border: 3px solid gray;
 }
-.div1 {
-  display: flex;
-}
+
 .div2 {
-  height: 90vh;
-  overflow-y: scroll;
+  /* height: 90vh; */
+  overflow-x: scroll;
+  overflow-y: hidden;
   scrollbar-color: #6969dd #e0e0e0;
   scrollbar-width: thin;
 }
@@ -67,6 +66,7 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   color: var(--text-secondary);
+  width: 200px;
 }
 .child1 img {
   height: 150px;
@@ -85,10 +85,10 @@
   padding: 2px 15px;
   text-overflow: ellipsis;
 }
-.list-group-item{
-background-color: #f6f6f60d;
+.list-group-item {
+  background-color: #f6f6f60d;
 }
-.child2 .certi-heading{
-font-weight: bold;
-font-size: 20px;
+.child2 .certi-heading {
+  font-weight: bold;
+  font-size: 20px;
 }

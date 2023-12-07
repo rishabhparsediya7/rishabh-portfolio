@@ -51,3 +51,9 @@
   display: flex;
   margin: 2px;
 }
+.card-body{
+  height: 90px;
+}
+.card-img, .card-img-top{
+  height: 300px;
+}

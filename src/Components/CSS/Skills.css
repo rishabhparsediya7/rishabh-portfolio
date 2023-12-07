@@ -16,8 +16,19 @@
 }
 
 .progressbar-container {
-  background: antiquewhite;
+  background: #bccbe5;
+  border-radius: 10px;
 }
-/* .CircularProgressbar .CircularProgressbar-trail{
 
-} */
+.inside-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inside-image img {
+  height: 80px;
+  width: 80px;
+  top: 34px;
+  position: absolute;
+}

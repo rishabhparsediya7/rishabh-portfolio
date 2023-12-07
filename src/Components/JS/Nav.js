@@ -22,12 +22,16 @@ const Nav = () => {
             <a href="#projects">
               <li>Projects</li>
             </a>
-            <a href="#certification">
-              <li>Certificates</li>
+            <a href="#skills">
+              <li>Skills</li>
             </a>
             <a href="#education">
               <li>Academic</li>
             </a>
+            <a href="#certification">
+              <li>Certificates</li>
+            </a>
+
             <a href="#contact">
               <li>Contact</li>
             </a>

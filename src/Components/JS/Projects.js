@@ -68,7 +68,7 @@ const Projects = () => {
       <div className="animate-charcter">Projects</div>
         <div className="row">
           {projects.map((e, index) => (
-            <div className="col" key={index}>
+            <div className="col col-md-3" key={index}>
               <div className="card">
                 <div className="img-cover">
                   <img src={e.image} alt="img" />
@@ -92,8 +92,8 @@ const Projects = () => {
                 </div>
 
                 <div className="desc">
-                  <h1>{e.name}</h1>
-                  <p>{e.description}</p>
+                  <h1  data-toggle="tooltip" data-placement="top" title={e.name}>{e.name}</h1>
+                  <div className="text-desc">{e.description}</div>
                   <a className="" href="">
                     Take me
                     <svg
