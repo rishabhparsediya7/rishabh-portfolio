@@ -1,33 +1,10 @@
-import React, { useEffect, useRef } from "react";
-import Nav from "./Nav";
+import React, { Suspense, useEffect } from "react";
+import Navbar from "./Navbar";
 import bgvideo from "../images/bg_video.mp4";
 import Footer from "./Footer";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { useInView } from "react-intersection-observer";
+import Loader from "./Loader";
 
 const Home = () => {
-  const container = useRef();
-  const { contextSafe } = useGSAP({ scope: container });
-  const ulRef = useRef(null);
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
-
-  useEffect(() => {
-    const onLoadEvent = contextSafe(() => {
-      if (inView) {
-        gsap.from(".flex-col > li", {
-          x: "100%", // animate from right
-          opacity: 0,
-          stagger: 0.2, // stagger the animation for each li
-          duration: 0.8,
-          ease: "power3.out",
-        });
-      }
-    });
-    onLoadEvent();
-  });
   const arr = [
     ["a", "Graphic Designing"],
     ["b", "Brochures"],
@@ -35,20 +12,27 @@ const Home = () => {
     ["d", "Social Media Marketing"],
     ["e", "Social Handle"],
   ];
-
+  useEffect(()=>{
+    document.title='Home'
+  },[])
   return (
-    <div ref={container}>
-      <Nav />
+    <div>
+      <Navbar />
       <div className="">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="relative top-0 h-screen w-full object-cover opacity-50"
-        >
-          <source src={bgvideo} type="video/mp4" />
-        </video>
+        <div>
+          <Suspense fallback={<Loader />}>
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="relative top-0 h-screen w-full object-cover opacity-50"
+            >
+              <source src={bgvideo} type="video/mp4" />
+            </video>
+          </Suspense>
+        </div>
+
         <div className="flex flex-col lg:flex-row justify-center align-middle absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full md:px-16 py-2 text-gray-900 text-center lg:text-left">
           <div className="flex-1 md:ml-6 mb-10">
             <p className="text-black text-4xl sm:text-6xl text-animation">
@@ -86,10 +70,13 @@ const Home = () => {
                 Take me there <i className="bi bi-arrow-right text-xl ml-6"></i>
               </button>
             </div>
-            <div ref={ref} className="flex-1 m-auto w-3/4">
-              <ul ref={ulRef} className="flex flex-col px-2 md:px-12 text-left">
+            <div className="flex-1 m-auto w-3/4">
+              <ul className="flex flex-col px-2 md:px-12 text-left">
                 {arr.map((e, index) => (
-                  <li key={index} className="text-3xl sm:text-5xl text-gray-800 py-2">
+                  <li
+                    key={index}
+                    className="text-3xl sm:text-5xl text-gray-800 py-2"
+                  >
                     <sup className="text-base italic mr-1 mb-2">{e[0]}</sup>
                     {e[1]}
                   </li>

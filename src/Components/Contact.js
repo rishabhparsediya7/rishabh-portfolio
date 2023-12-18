@@ -1,32 +1,19 @@
-import React from "react";
-import Nav from "./Nav";
-import c1 from "../images/contact.jpg";
-import c2 from "../images/contact2.jpg";
+import React, { Suspense, useEffect } from "react";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Loader from "./Loader";
+import LazyContact from "./LazyContact";
 const Contact = () => {
+  useEffect(()=>{
+    document.title='Contact'
+  },[])
   return (
     <div>
-      <Nav />
-      <div className="flex flex-col">
-        <img
-          className="relative h-screen w-screen object-cover"
-          src={c1}
-          alt=""
-        />
-        <div className="flex flex-col justify-center align-middle absolute m-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-center text-neutral-50">
-          <h1 className="text-5xl w-[20rem] md:w-full md:text-7xl md:mb-0">
-            Get in touch with us
-          </h1>
-          <h3 className="text-xl md:text-2xl md:mb-0">
-            We are waiting to work with you.
-          </h3>
-          <a
-            href="#contact"
-            className="btn bg-pink-300 rounded-lg m-auto md:w-1/2 w-full text-slate-950 text-2xl mt-10 px-5 py-3"
-          >
-            Let's start work.
-          </a>
-        </div>
+      <Navbar />
+      <div>
+        <Suspense fallback={<Loader/>}>
+          <LazyContact />
+        </Suspense>
       </div>
       <div className="bg-gray-50" id="contact">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
