@@ -102,3 +102,92 @@ export const certifications = [
     image: "certificates/10.jpg",
   },
 ];
+export const services = [
+  {
+    icon: "bi bi-shop-window text-4xl mr-5 text-green-700 mb-4",
+    heading: "Service 1",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae eius dolores ea quos iure unde consectetur pariatur nulla eaque necessitatibus voluptatum inventore cum minus neque ad maiores, perspiciatis dicta?",
+  },
+  {
+    icon: "bi bi-people text-4xl mr-5 text-green-700 mb-4",
+    heading: "Service 2",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae eius dolores ea quos iure unde consectetur pariatur nulla eaque necessitatibus voluptatum inventore cum minus neque ad maiores, perspiciatis dicta?",
+  },
+  {
+    icon: "bi bi-easel text-4xl mr-5 text-green-700 mb-4",
+    heading: "Service 3",
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos molestiae eius dolores ea quos iure unde consectetur pariatur nulla eaque necessitatibus voluptatum inventore cum minus neque ad maiores, perspiciatis dicta?",
+  },
+];
+export const marqueeImages = [
+  "/serviceImages/1.jpg",
+  "/serviceImages/2.jpg",
+  "/serviceImages/3.jpg",
+  "/serviceImages/4.jpg",
+  "/serviceImages/5.jpg",
+  "/serviceImages/6.jpg",
+  "/serviceImages/7.jpg",
+  "/serviceImages/8.png",
+];
+export const testiMonials = [
+  {
+    heading: "Yotz",
+    desc: "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+    date: "11/15/2023",
+    place: "Blois",
+  },
+  {
+    heading: "Trupe",
+    desc: "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+    date: "4/10/2023",
+    place: "Florentino Ameghino",
+  },
+  {
+    heading: "Realfire",
+    desc: "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
+    date: "3/9/2023",
+    place: "Miaoqian",
+  },
+  {
+    heading: "Dabvine",
+    desc: "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
+    date: "11/1/2023",
+    place: "Pochinki",
+  },
+  {
+    heading: "Mymm",
+    desc: "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    date: "9/10/2023",
+    place: "Suwangi Utara",
+  },
+  {
+    heading: "Meeveo",
+    desc: "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
+    date: "4/15/2023",
+    place: "Belleville",
+  },
+  {
+    heading: "Agivu",
+    desc: "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+    date: "2/22/2023",
+    place: "Ágios Spyrídon",
+  },
+  {
+    heading: "Eadel",
+    desc: "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.nIn congue. Etiam justo. Etiam pretium iaculis justo.nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
+    date: "3/18/2023",
+    place: "Rízoma",
+  },
+  {
+    heading: "Mudo",
+    desc: "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+    date: "1/4/2023",
+    place: "Carora",
+  },
+  {
+    heading: "Twimbo",
+    desc: "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.nFusce consequat. Nulla nisl. Nunc nisl.nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
+    date: "8/6/2023",
+    place: "Olyka",
+  },
+];

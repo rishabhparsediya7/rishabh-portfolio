@@ -1,0 +1,13 @@
+.swiper-slide {
+  flex-shrink: 100 !important;
+}
+.swiper-slide-active {
+  background-color: rgb(196 206 206);
+  border-radius: 10px;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  background-color: azure;
+  border-radius: 10px;
+}
